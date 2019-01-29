@@ -3,19 +3,26 @@
 
 CC = g++
 
-dep_path = ../../dependencies
+# Windows
+ifdef OS
+	dep_path = ../../dependencies
+# Linux
+else
+	dep_path = /usr
+endif
+
 INCLUDES = -I$(dep_path)/include
 LIBRARIES = -L$(dep_path)/lib
 
 CPPFLAGS = -Wall -ggdb3 -Og $(INCLUDES)
-LDFLAGS = -static-libgcc -static-libstdc++ -lglfw3 $(LIBRARIES)
+LDFLAGS = -lSDL2 $(LIBRARIES)
 
 # Windows
 ifdef OS
-	LDFLAGS += -lopengl32 -lgdi32
+	LDFLAGS += 
 # Linux
 else
-	LDFLAGS += -lGL -lXrandr -lX11 -pthread -ldl -lXxf86vm -lXinerama -lXcursor
+	LDFLAGS += -lGL
 endif
 
 TARGET = hello-triangle
