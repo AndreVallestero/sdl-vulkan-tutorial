@@ -1,4 +1,5 @@
 *.md.backup
+.vscode
 
 # Prerequisites
 *.d
