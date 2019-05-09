@@ -4,7 +4,7 @@ An in depth cross platform tutorial for SDL2 using legacy OpenGL ES 2 and Vulkan
 ## Why SDL2?
 PLATFORM. SUPPORT.
 
-Although alternatives like SFML and GLFW are significantly lighter and leaner, that amount of platform specific code needed in larger projects is not worth it. Additionaly, SDL is one of the few libraries has mobile and emscripten support.
+Although alternatives like SFML and GLFW are significantly lighter and leaner, that amount of platform specific code needed in larger projects is not worth it. Additionaly, SDL is one of the few libraries has mobile and emscript support.
 
 ## Why ES and Vulkan and not regular modern OpenGL?
 I am a firm believer that all modern graphics projects should use Vulkan as it is the future of the industry and if used properly, its performance ceiling is higher than OpenGL.
@@ -18,5 +18,5 @@ Unfortunately, hardware support for Vulkan at this time is limited so some compr
 - dungeon-crawler: A simple top-down rogue-like dungeon crawler game similar to binding of issac.
 - hello-cube: The most basic 3d application that consists of a rotation cube in 3d space.
 - model-renderer: The most basic application that will render a model in 3d space.
-- crossworld: A simple, explorable 3d world with simple physics similar to VRChat.
+- crossworld: A simple, explorable, 3d world with simple physics similar to VRChat.
 
