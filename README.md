@@ -11,6 +11,9 @@ I am a firm believer that all modern graphics projects should use Vulkan as it i
 
 Unfortunately, hardware support for Vulkan at this time is limited so some compromises should made to support older devices. This is where OpenGL ES 2 shines. Why ES over modern OpenGL? Since performance is being compromised for platform support, it would be better to go for the greatest platform support with our second implementation. ES supports more devices than modern OpenGL such as the very popular Raspberry Pi series of SBCs.
 
+## Why C++?
+Although I agree that C or Rust is are more suitable languages than C++ in most implementations, I can't ignore the usefullness of OOP and C++'s zero-cost abstractions and extremely powerful meta-programming. These tools will help reduce development time while keeping performance at a maximum.
+
 ## Examples
 - hello-triangle: The most basic 2d application. A simple triangle drawn on screen.
 - pong: A clone of the simple 2d game for the Atari 2600.
