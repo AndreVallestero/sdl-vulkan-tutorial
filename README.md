@@ -12,11 +12,11 @@ I am a firm believer that all modern graphics projects should use Vulkan as it i
 Unfortunately, hardware support for Vulkan at this time is limited so some compromises should made to support older devices. This is where OpenGL ES 2 shines. Why ES over modern OpenGL? Since performance is being compromised for platform support, it would be better to go for the greatest platform support with our second implementation. ES supports more devices than modern OpenGL such as the very popular Raspberry Pi series of SBCs.
 
 ## Examples
-hello-triangle: The most basic 2d application. A simple triangle drawn on screen.
-pong: A clone of the simple 2d game for the Atari 2600.
-side-scroller: A simple side scroller 2d game similar to the original Sonic or Mario games.
-dungeon-crawler: A simple top-down rogue-like dungeon crawler game similar to binding of issac.
-hello-cube: The most basic 3d application that consists of a rotation cube in 3d space.
-model-renderer: The most basic application that will render a model in 3d space.
-crossworld: A simple, explorable 3d world with simple physics similar to VRChat.
+- hello-triangle: The most basic 2d application. A simple triangle drawn on screen.
+- pong: A clone of the simple 2d game for the Atari 2600.
+- side-scroller: A simple side scroller 2d game similar to the original Sonic or Mario games.
+- dungeon-crawler: A simple top-down rogue-like dungeon crawler game similar to binding of issac.
+- hello-cube: The most basic 3d application that consists of a rotation cube in 3d space.
+- model-renderer: The most basic application that will render a model in 3d space.
+- crossworld: A simple, explorable 3d world with simple physics similar to VRChat.
 
