@@ -23,5 +23,5 @@ Although I agree that C or Rust is are more suitable languages than C++ in most 
 - model-renderer: The most basic application that will render a model in 3d space.
 - crossworld: A simple, explorable, 3d world with simple physics similar to VRChat.
 
-All 3D models will use the glTF format
+All 3D models will use the glTF/GLB format
 
