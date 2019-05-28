@@ -5,24 +5,24 @@ CC = g++
 
 # Windows
 ifdef OS
-	dep_path = ../../dependencies
+	DEPPATH = ../../dependencies
 # Linux
 else
-	dep_path = /usr
+	DEPPATH = /usr
 endif
 
-INCLUDES = -I$(dep_path)/include
-LIBRARIES = -L$(dep_path)/lib
+INCLUDES = -I$(DEPPATH)/include
+LIBRARIES = -L$(DEPPATH)/lib
 
-CPPFLAGS = -Wall -ggdb3 -Og $(INCLUDES)
-LDFLAGS = -lSDL2 $(LIBRARIES)
+CXXFLAGS = -Wall -ggdb3 -Og $(INCLUDES)
+LDFLAGS =  -lOpengl32 -lglu32 -lSDL2main -lSDL2 -lgdi32 $(LIBRARIES)
 
 # Windows
 ifdef OS
-	LDFLAGS += 
+	LDFLAGS += -lmingw32 
 # Linux
 else
-	LDFLAGS += -lGL
+	LDFLAGS +=
 endif
 
 TARGET = hello-triangle
@@ -36,7 +36,7 @@ $(TARGET): $(objects)
 	$(CC) -o bin/$@ $^ $(LDFLAGS) 
 
 $(objects): build/%.o: src/%.cpp $(headers) Makefile
-	$(CC) $(CPPFLAGS) -c -o $@ $<
+	$(CC) $(CXXFLAGS) -c -o $@ $<
 
 clean:
 	$(RM) bin/$(TARGET) $(objects)
