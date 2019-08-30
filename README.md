@@ -15,7 +15,7 @@ Although I agree that C or Rust are more suitable languages in most use cases, I
 ## Why Meson?
 When choosing a build system for this project, being able to compile on the 3 main platforms was the highest priority. Although I love the minimalism of Make(makefiles), there are far too many issues with trying to make it work on Windows even with mingw and cygwin.
 
-The next logical step is to look towards CMake. CMake has been the gold standard in cross-platform development since it's inception, however, it's known to have performance issues and it's scripting language is overly complicated and often results in many issues. [SucklessOrg](https://suckless.org/sucks/) says it best: "[CMake is] so huge and bloated, compilation takes longer than compiling GCC!". 
+The next logical step is to look towards CMake. CMake has been the gold standard in cross-platform development since it's inception, however, it's known to have performance issues and it's scripting language is overly complicated and often results in many issues. [SucklessOrg](https://suckless.org/sucks/) said it best: "[CMake is] so huge and bloated, compilation takes longer than compiling GCC!". 
 
 That leaves us with Meson. Meson is much newer than the 2 previously mentioned systems. As such, it tries to combine the advantages of both and (mostly) leaves behind their issues. Meson is blazing fast as it primarily uses Ninja as the back-end for compilation. Additionally, the it uses its own (python-like) language and is completely platform agnostic. This makes it suitable for this project and I plan on using it for future projects as well.
 
