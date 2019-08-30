@@ -1,5 +1,5 @@
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_vulkan.h>
+#include <SDL/SDL.h>
+#include <SDL/SDL_vulkan.h>
 
 int main(int argc, char * argv[]) {
     SDL_Window *window;
